@@ -28,7 +28,8 @@ export const Button = ({ type = 'text', color = BUTTON_COLOR.PRIMARY, title, cla
 
   const parentClassName: string = className ? className : '';
   const buttonClass = classnames({
-    'border-solid border-2': type === 'text',
+    'p-1': true,
+    'border-solid border-2': type === 'outlined',
     'bg-primary': color === BUTTON_COLOR.PRIMARY && type === 'contained',
     rounded: type === 'contained',
     [parentClassName]: Boolean(parentClassName),

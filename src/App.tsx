@@ -3,10 +3,10 @@ import { Button } from './atoms';
 
 function App() {
   return (
-    <div className="flex flex-row space-x-1">
-      <Button title="Save Button" />
-      <Button title="Save Button" type="outlined" />
-      <Button title="Save Button" type="contained" />
+    <div className="flex flex-column space-x-2">
+      <Button title="Text Button" />
+      <Button title="Outlined Button" type="outlined" />
+      <Button title="Contained Button" type="contained" />
     </div>
   );
 }
